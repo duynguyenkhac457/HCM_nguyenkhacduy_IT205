@@ -102,46 +102,46 @@ class InventoryManager():
         except ValueError:
             print("Dữ liệu nhận vào không hợp lệ !")
         
-    # def update_item(self):
-    #     found = False
-    #     update_item = input("Nhập mã đơn cần cập nhật: ")
-    #     update_item = update_item.strip().upper()
-    #     if self.find_by_id:
-    #         try:
-    #             quantity = int(input("Nhập số lượng tồn: "))
-    #             if not quantity:
-    #                 print("Số tồn không được để rỗng !")
-    #                 return
-    #             if 0 >= quantity >= 100000:
-    #                 print("Số lượng không hợp lệ !")
-    #                 return
-    #             if quantity < 0 :
-    #                 print("Số tồn phải lớn hơn 0 !")
-    #                 return
-    #             unit_price = float(input("Nhập đơn giá: "))
-    #             if not unit_price:
-    #                 print("Đơn giá không được rỗng !")
-    #                 return
-    #             if unit_price < 0:
-    #                 print("Đơn giá phải lớn hơn hoặc bằng 0 !")
-    #                 return
-    #             storate_fee = float(input("Nhập chi phí lưu kho: "))
-    #             if not storate_fee:
-    #                 print("Chi phí lưu kho không được để trống !")
-    #                 return
-    #             if storate_fee < 0:
-    #                 print("Chi phí lưu kho phải lớn hơn hoặc bằng 0 !")
-    #                 return
-    #         except ValueError:
-    #             print("Dữ liệu nhận vào không hợp lệ !")
+     def update_item(self):
+         found = False
+         update_item = input("Nhập mã đơn cần cập nhật: ")
+         update_item = update_item.strip().upper()
+         if self.find_by_id:
+             try:
+                 quantity = int(input("Nhập số lượng tồn: "))
+                 if not quantity:
+                     print("Số tồn không được để rỗng !")
+                     return
+                 if 0 >= quantity >= 100000:
+                     print("Số lượng không hợp lệ !")
+                     return
+                 if quantity < 0 :
+                     print("Số tồn phải lớn hơn 0 !")
+                     return
+                 unit_price = float(input("Nhập đơn giá: "))
+                 if not unit_price:
+                     print("Đơn giá không được rỗng !")
+                     return
+                 if unit_price < 0:
+                     print("Đơn giá phải lớn hơn hoặc bằng 0 !")
+                     return
+                 storate_fee = float(input("Nhập chi phí lưu kho: "))
+                 if not storate_fee:
+                     print("Chi phí lưu kho không được để trống !")
+                     return
+                 if storate_fee < 0:
+                     print("Chi phí lưu kho phải lớn hơn hoặc bằng 0 !")
+                     return
+             except ValueError:
+                 print("Dữ liệu nhận vào không hợp lệ !")
             
-        #     self.quantity = quantity
-        #     self.unit_price = unit_price
-        #     self.storate_fee = storate_fee
-        #     self.total
-        #     found = True
-        # if not found:
-        #     print("Không tìm thấy mã hàng hóa !")
+             self.quantity = quantity
+             self.unit_price = unit_price
+             self.storate_fee = storate_fee
+             self.total
+             found = True
+         if not found:
+             print("Không tìm thấy mã hàng hóa !")
 
 
 def menu():
